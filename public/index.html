@@ -4,34 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chat App</title>
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <h1>Chat App</h1>
-    <div id="messages"></div>
-    <form id="message-form">
-      <label for="message">Message: </label>
-      <input id="message" placeholder="Message" name="message" />
-      <input id="form-btn" type="submit" value="Submit" />
-    </form>
-
-    <script id="message-template" type="text/html">
-      <div>
-        <p>{{createdAt}} - {{message}}</p>
-      </div>
-    </script>
-
-    <script id="location-msg-template" type="text/html">
-      <div>
-        <p>{{createdAt}} -<a href="{{locationUrl}}" target="_blank"> My Location</a></p>
-      </div>
-    </script>
-
-    <button id="send-location">Send My Location</button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/chat.js"></script>
-  </body>
+		<div class="centered-form">
+			<div class="centered-form__box">
+				<h1>Sign In to Chat</h1>
+				<form action="./chat.html">
+					<label>Your Name</label>
+					<input type="text" name="username" placeholder="Your Name" required>
+					<label>Room</label>
+					<input type="text" name="room" placeholder="Room" required>
+					<button>Join</button>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
